@@ -178,6 +178,17 @@
                 "desc": "The name of the ink variable to watch"
               }
             }
+          },
+          "var-exists": {
+            "list-name": "Variable exists",
+            "display-text": "Variable {0} exists",
+            "description": "Check whether a global ink variable with the given name exists in the story.",
+            "params": {
+              "var": {
+                "name": "Variable",
+                "desc": "The name of the ink variable to check for"
+              }
+            }
           }
         },
         "expressions": {
@@ -272,7 +283,7 @@
           },
           "var-value": {
             "translated-name": "VariableValue",
-            "description": "The value of an ink variable",
+            "description": "The value of an ink variable. Returns an empty string if the variable does not exist (see the 'Variable exists' condition).",
             "params": {
               "var": {
                 "name": "Variable",

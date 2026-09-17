@@ -5,7 +5,7 @@ export const config = {
   highlight: false,
   isDeprecated: false,
   returnType: "any",
-  description: "The value of an ink variable",
+  description: "The value of an ink variable. Returns an empty string if the variable does not exist (see the 'Variable exists' condition).",
   params: [
     {
       id: "var",
@@ -19,10 +19,13 @@ export const config = {
 export const expose = true;
 
 export default function (name) {
+    if (!this._story || !this._story.variablesState.GlobalVariableExistsWithName(name)) {
+        return "";
+    }
     let value = this._story.variablesState[name];
     if (value instanceof InkList) {
         return value.maxItem.Key.itemName;
     } else {
-        return value;
+        return this.toConstructAllowedValue(value);
     }
 }

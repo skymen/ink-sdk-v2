@@ -1,19 +1,21 @@
 <img src="./src/icon.svg" width="100" /><br>
 # Ink
 <i>Provides easy support for Ink stories</i> <br>
-### Version 2.0.0.1
+### Version 2.0.0.2
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/quewon/ink-sdk-v2/releases/download/SmugRainbowPony_INK-2.0.0.1.c3addon/SmugRainbowPony_INK-2.0.0.1.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/ink-sdk-v2/releases/download/SmugRainbowPony_INK-2.0.0.2.c3addon/SmugRainbowPony_INK-2.0.0.2.c3addon)
 <br>
-<sub> [See all releases](https://github.com/quewon/ink-sdk-v2/releases) </sub> <br>
+<sub> [See all releases](https://github.com/skymen/ink-sdk-v2/releases) </sub> <br>
 
-#### What's New in 2.0.0.1
-- **Added:** quewon as an author
+#### What's New in 2.0.0.2
+- **Added:** VariableExists condition (checks whether a global ink variable exists)
+- **Fixed:** VariableValue no longer returns null for unknown variables; it returns an empty string instead, and converts booleans to 0/1
 
 <sub>[View full changelog](#changelog)</sub>
 
 ---
 <b><u>Author:</u></b> SmugRainbowPony, quewon, skymen <br>
+<b>[Construct Addon Page](https://www.construct.net/en/make-games/addons/518/ink)</b>  <br>
 <sub>Made using [CAW](https://marketplace.visualstudio.com/items?itemName=skymen.caw) </sub><br>
 
 ## Table of Contents
@@ -74,6 +76,7 @@ npm run dev
 | Has tags | Test if the passage has tags to pull from. |  |
 | On any variable changed | Trigger when any variable changes values |  |
 | On variable changed | Trigger when variable changes values | Variable *(string)* <br> |
+| Variable exists | Check whether a global ink variable with the given name exists in the story. | Variable *(string)* <br> |
 
 
 ---
@@ -94,27 +97,31 @@ npm run dev
 | LoopTagText | Get the text of the current tag in the loop | string |  | 
 | TagsAmount | Number of available tags. | number |  | 
 | LastChangedVariable | The name of the last changed Ink variable | any |  | 
-| VariableValue | The value of an ink variable | any | Variable *(string)* <br> | 
+| VariableValue | The value of an ink variable. Returns an empty string if the variable does not exist (see the 'Variable exists' condition). | any | Variable *(string)* <br> | 
 
 
 ---
 ## Changelog
 
+**2.0.0.2**
+- **Added:** VariableExists condition (checks whether a global ink variable exists)
+- **Fixed:** VariableValue no longer returns null for unknown variables; it returns an empty string instead, and converts booleans to 0/1
+
 **2.0.0.1**
 - **Added:** quewon as an author
 
 **2.0.0.0**
-- **Added:** - HasTags (checks if a passage has tags)
-- **Added:** - LoopTagIndex
-- **Added:** - TagsAmount
-- **Added:** - OnAnyVariableChanged
-- **Added:** - LastChangedVariable
-- **Added:** - Support for calling and evaluating Ink functions
-- **Changed:** - Ported to SDK V2
-- **Changed:** - CheckTags condition is now CheckTagExists
-- **Changed:** - VariableChanged is now OnVariableChanged
-- **Fixed:** - Deprecated KeyValueTag
-- **Fixed:** - Fixed an update issue with observing variables
+- **Added:** HasTags (checks if a passage has tags)
+- **Added:** LoopTagIndex
+- **Added:** TagsAmount
+- **Added:** OnAnyVariableChanged
+- **Added:** LastChangedVariable
+- **Added:** Support for calling and evaluating Ink functions
+- **Changed:** Ported to SDK V2
+- **Changed:** CheckTags condition is now CheckTagExists
+- **Changed:** VariableChanged is now OnVariableChanged
+- **Fixed:** Deprecated KeyValueTag
+- **Fixed:** Fixed an update issue with observing variables
 
 **0.0.0.0**
 - **Added:** Initial release.
