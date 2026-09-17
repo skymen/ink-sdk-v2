@@ -1,9 +1,9 @@
 {
   "languageTag": "en-US",
-  "fileDescription": "Strings for smugrainbowpony_ink.",
+  "fileDescription": "Strings for skymen_ink.",
   "text": {
     "plugins": {
-      "smugrainbowpony_ink": {
+      "skymen_ink": {
         "name": "Ink",
         "description": "Provides easy support for Ink stories",
         "help-url": "https://www.construct.net",

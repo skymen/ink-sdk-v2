@@ -18,5 +18,10 @@
     "added": "- VariableExists condition (checks whether a global ink variable exists)",
     "changed": "",
     "fixed": "- VariableValue no longer returns null for unknown variables; it returns an empty string instead, and converts booleans to 0/1"
+  },
+  "2.1.0.0": {
+    "added": "",
+    "changed": "- BREAKING: addon ID changed from SmugRainbowPony_INK to skymen_ink so the addon can be published on construct.net. Construct matches plugins by ID, so projects using the old addon must install this one and re-add the Ink object; they will not update in place.",
+    "fixed": ""
   }
 }

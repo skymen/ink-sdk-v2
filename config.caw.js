@@ -7,7 +7,7 @@ import {
 import _version from "./version.js";
 export const addonType = ADDON_TYPE.PLUGIN;
 export const type = PLUGIN_TYPE.OBJECT;
-export const id = "SmugRainbowPony_INK";
+export const id = "skymen_ink";
 export const name = "Ink";
 export const version = _version;
 export const minConstructVersion = undefined;

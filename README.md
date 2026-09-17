@@ -1,15 +1,14 @@
 <img src="./src/icon.svg" width="100" /><br>
 # Ink
 <i>Provides easy support for Ink stories</i> <br>
-### Version 2.0.0.2
+### Version 2.1.0.0
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/ink-sdk-v2/releases/download/SmugRainbowPony_INK-2.0.0.2.c3addon/SmugRainbowPony_INK-2.0.0.2.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/ink-sdk-v2/releases/download/skymen_ink-2.1.0.0.c3addon/skymen_ink-2.1.0.0.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/ink-sdk-v2/releases) </sub> <br>
 
-#### What's New in 2.0.0.2
-- **Added:** VariableExists condition (checks whether a global ink variable exists)
-- **Fixed:** VariableValue no longer returns null for unknown variables; it returns an empty string instead, and converts booleans to 0/1
+#### What's New in 2.1.0.0
+- **Changed:** BREAKING: addon ID changed from SmugRainbowPony_INK to skymen_ink so the addon can be published on construct.net. Construct matches plugins by ID, so projects using the old addon must install this one and re-add the Ink object; they will not update in place.
 
 <sub>[View full changelog](#changelog)</sub>
 
@@ -102,6 +101,9 @@ npm run dev
 
 ---
 ## Changelog
+
+**2.1.0.0**
+- **Changed:** BREAKING: addon ID changed from SmugRainbowPony_INK to skymen_ink so the addon can be published on construct.net. Construct matches plugins by ID, so projects using the old addon must install this one and re-add the Ink object; they will not update in place.
 
 **2.0.0.2**
 - **Added:** VariableExists condition (checks whether a global ink variable exists)
