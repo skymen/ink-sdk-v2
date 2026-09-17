@@ -15,7 +15,6 @@
 
 ---
 <b><u>Author:</u></b> SmugRainbowPony, quewon, skymen <br>
-<b>[Construct Addon Page](https://www.construct.net/en/make-games/addons/518/ink)</b>  <br>
 <sub>Made using [CAW](https://marketplace.visualstudio.com/items?itemName=skymen.caw) </sub><br>
 
 ## Table of Contents
